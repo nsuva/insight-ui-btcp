@@ -70,11 +70,11 @@ compile***.
 
 ## Note
 
-For more details about the [Insight API](https://github.com/str4d/insight-api-zcash) configuration and end-points, go to [Insight API GitHub repository](https://github.com/str4d/insight-api-zcash).
+For more details about the [Insight API](https://github.com/z-classic/insight-api-zclassic) configuration and end-points, go to [Insight API GitHub repository](https://github.com/z-classic/insight-api-zclassic).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/str4d/insight-ui-zcash).
+Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/z-classic/insight-ui-zclassic).
 
 
 ## License
