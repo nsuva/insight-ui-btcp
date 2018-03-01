@@ -1,4 +1,3 @@
-<section class="container">
 <div data-ng-include src="'views/includes/connection.html'"></div>
 <section data-ng-controller="transactionsController" data-ng-init="findThis()">
   <div class="secondary_navbar hidden-xs hidden-sm" scroll data-ng-class="{'hidden': !secondaryNavbar}" data-ng-show="tx.txid" data-ng-init="hideSNavbar=0">
@@ -17,7 +16,7 @@
         </span>
         <span data-ng-show="!tx.confirmations" 
           class="txvalues txvalues-danger" translate>Unconfirmed Transaction!</span>
-        <span class="txvalues txvalues-primary">{{$root.currency.getConvertion(tx.valueOut)}}</span>
+        <span class="txvalues txvalues-primary">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut + ' BTCP' }}</span>
       </div>
     </div>
     <div class="hide_snavbar">
@@ -55,7 +54,7 @@
         </tr>
         <tr data-ng-show="tx.fees">
           <td><strong translate>Fee Rate</strong></td>
-          <td class="text-muted text-right">{{$root.currency.getConvertion((tx.fees * 1000) / tx.size) + ' per kB'}}</td>
+          <td class="text-muted text-right">{{$root.currency.getConvertion((tx.fees * 1000) / tx.size) + ' per kB' || ((tx.fees * 1000) / tx.size) + 'BTCP per kB'}}</td>
         </tr>
         <tr>
           <td><strong translate>Received Time</strong></td>
@@ -96,5 +95,4 @@
       <div data-ng-include src="'views/transaction/tx.html'"></div>
     </div>
   </div>
-</section>
 </section>

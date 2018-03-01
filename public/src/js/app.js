@@ -1,10 +1,7 @@
 'use strict';
 
-var testnet = false;
-var netSymbol = testnet ? 'TAZ' : 'ZCL';
-
 var defaultLanguage = localStorage.getItem('insight-language') || 'en';
-var defaultCurrency = localStorage.getItem('insight-currency') || netSymbol;
+var defaultCurrency = localStorage.getItem('insight-currency') || 'BTC';
 
 angular.module('insight',[
   'ngAnimate',
@@ -22,7 +19,6 @@ angular.module('insight',[
   'insight.transactions',
   'insight.address',
   'insight.search',
-  'insight.charts',
   'insight.status',
   'insight.connection',
   'insight.currency',
@@ -35,7 +31,6 @@ angular.module('insight.blocks', []);
 angular.module('insight.transactions', []);
 angular.module('insight.address', []);
 angular.module('insight.search', []);
-angular.module('insight.charts', []);
 angular.module('insight.status', []);
 angular.module('insight.connection', []);
 angular.module('insight.currency', []);

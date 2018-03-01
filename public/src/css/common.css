@@ -5,14 +5,10 @@
 
 html,
 body {
-  color: black;
+  color: #373D42;
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
-}
-
-.bgimage {
-  background-image: url('https://raw.githubusercontent.com/z-classic/z-classic.github.io/master/bgecl2.jpg');
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -110,7 +106,7 @@ margin-left: 0;
   background-color: #F0F7E2;
 }
 .navbar { min-height: 64px; }
-.navbar-default .navbar-toggle {
+.navbar-default .navbar-toggle { 
   border-color: #fff;
   margin-top: 15px;
 }
@@ -573,7 +569,7 @@ margin-left: 0;
   text-align: center;
 }
 
-.tx-id span {
+.tx-id span { 
   font-size: 40px;
   margin: 30px 0;
 }
@@ -721,7 +717,7 @@ a.v_highlight_more {
 @media (max-width: 991px) {
   .status {
     display: none;
-  }
+  } 
   .navbar-form {
     width: auto;
   }
@@ -772,7 +768,7 @@ a.v_highlight_more {
   }
   .status {
     display: none;
-  }
+  } 
   #wrap>.container {
     padding: 50px 15px 0;
   }
@@ -853,3 +849,4 @@ a.v_highlight_more {
     width: 350px;
   }
 }
+
